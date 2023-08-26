@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulario de Registro de Persona</h1>
+
+    <form>
+        <!-- Nombre completo -->
+        <label for="fullName">Nombre completo:</label>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <!-- Correo electrónico -->
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Fecha de nacimiento -->
+        <label for="birthDate">Fecha de nacimiento:</label>
+        <input type="date" id="birthDate" name="birthDate" required><br><br>
+
+        <!-- Contraseña -->
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <!-- Confirmación de contraseña -->
+        <label for="confirmPassword">Confirmar contraseña:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+        <!-- Intereses -->
+        <label>Intereses:</label><br>
+        <input type="checkbox" id="reading" name="interests" value="lectura">
+        <label for="reading">Lectura</label><br>
+
+        <input type="checkbox" id="music" name="interests" value="música">
+        <label for="music">Música</label><br>
+
+        <input type="checkbox" id="videogames" name="interests" value="videojuegos">
+        <label for="videogames">Videojuegos</label><br>
+
+        <input type="checkbox" id="sports" name="interests" value="deporte">
+        <label for="sports">Deporte</label><br>
+
+        <input type="checkbox" id="studies" name="interests" value="estudios">
+        <label for="studies">Estudios</label><br>
+
+        <input type="checkbox" id="technology" name="interests" value="tecnología">
+        <label for="technology">Tecnología</label><br>
+
+        <input type="checkbox" id="movies" name="interests" value="películas">
+        <label for="movies">Películas</label><br><br>
+
+        <!-- Botón para enviar el formulario -->
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+
+</html>
