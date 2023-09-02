@@ -3,6 +3,7 @@ const btnRegistrar = document.querySelector('#btn-registrar');
 const inputNombre = document.querySelector('#fullName');
 
 
+
 const validar = (event) => {
     event.preventDefault();
     listaInputs.forEach(input => {
