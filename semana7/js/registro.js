@@ -1,11 +1,11 @@
-const listaInputs = document.querySelectorAll('input[required]');
+const listaInputs = document.querySelectorAll('[required]');
 const btnRegistrar = document.querySelector('#btn-registrar');
 const inputNombre = document.querySelector('#fullName');
 const inputCorreo = document.querySelector('#email');
 const inputNacimiento = document.getElementById('birthDate');
 const inputContrasenna = document.getElementById('password');
 const inputConfirmacion = document.getElementById('confirmPassword');
-let listaPersonas = [];
+let listaPersonas = getStorageItem('listaPersonas');
 
 const validar = () => {
 
@@ -50,6 +50,7 @@ const registrar = () => {
             'contrasenna': inputContrasenna.value
         };
         listaPersonas.push(personaNueva);
+        setStorageItem('listaPersonas', listaPersonas);
 
         Swal.fire({
             'icon': 'success',
