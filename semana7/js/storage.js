@@ -1,6 +1,9 @@
 const getStorageItem = (key) => {
-    let value;
-    value = JSON.parse(localStorage.getItem(key));
+    let value = [];
+    if (localStorage.getItem(key)) {
+        value = JSON.parse(localStorage.getItem(key));
+    }
+
 
     return value;
 };
