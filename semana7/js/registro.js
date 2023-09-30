@@ -49,6 +49,7 @@ const registrar = () => {
             'nacimiento': inputNacimiento.value,
             'contrasenna': inputContrasenna.value
         };
+        
         listaPersonas.push(personaNueva);
         setStorageItem('listaPersonas', listaPersonas);
 
